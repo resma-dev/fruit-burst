@@ -30,6 +30,23 @@
             font-family: 'Lato', sans-serif;
         }
 
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .bannar-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+        }
+        /* responsive  */
         @media screen and (max-width: 576px) {
             .mobile {
                 display: none;
@@ -79,6 +96,81 @@
                 </div>
             </div>
         </nav>
+        <!-- bannar slider  -->
+        <div class="carousel w-full">
+            <!-- slider-1  -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="relative">
+                    <img src="images/banner1.png" class="w-full" />
+                    <div class="overlay">
+                        <div class="bannar-text">
+                            <h1 class="normal-case text-[#FFF] text-xl lg:text-4xl text-bold">Exotic tastes at your <br> doorstep
+                            </h1>
+                            <p class="text-[#FFF] text-base pt-6">We supply highly quality organic products</p>
+                            <button class="btn btn-error text-[#FFF] mt-6">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slider-2  -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="relative">
+                    <img src="images/banner2.png" class="w-full" />
+                    <div class="overlay">
+                        <div class="bannar-text">
+                            <h1 class="normal-case text-[#FFF] text-xl lg:text-4xl text-bold">Exotic tastes at your <br> doorstep
+                            </h1>
+                            <p class="text-[#FFF] text-base pt-6">We supply highly quality organic products</p>
+                            <button class="btn btn-error text-[#FFF] mt-6">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slider-3  -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="relative">
+                    <img src="images/banner3.png" class="w-full" />
+                    <div class="overlay">
+                        <div class="bannar-text">
+                            <h1 class="normal-case text-[#FFF] text-xl lg:text-4xl text-bold">Exotic tastes at your <br> doorstep
+                            </h1>
+                            <p class="text-[#FFF] text-base pt-6">We supply highly quality organic products</p>
+                            <button class="btn btn-error text-[#FFF] mt-6">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slider-4  -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="relative">
+                    <img src="images/banner4.png" class="w-full" />
+                    <div class="overlay">
+                        <div class="bannar-text">
+                            <h1 class="normal-case text-[#FFF] text-xl lg:text-4xl text-bold">Exotic tastes at your <br> doorstep
+                            </h1>
+                            <p class="text-[#FFF] text-base pt-6">We supply highly quality organic products</p>
+                            <button class="btn btn-error text-[#FFF] mt-6">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
     </header>
     <main class="md:container md:mx-auto">
 
