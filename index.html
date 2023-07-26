@@ -26,21 +26,65 @@
     </script>
     <!-- css style  -->
     <style>
-        .font-lato{
+        .font-lato {
             font-family: 'Lato', sans-serif;
+        }
+
+        @media screen and (max-width: 576px) {
+            .mobile {
+                display: none;
+            }
         }
     </style>
 </head>
 
 <body class="font-lato">
-    <header>
+    <header class="md:container md:mx-auto">
+        <nav class="my-[50px]">
+            <div class="navbar bg-[#F85559] rounded-[600px]">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-[#F85559] rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-start hidden lg:flex">
+                        <ul class="menu text-base text-[#FFF] menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-row gap-4 items-center">
+                        <img src="images/logo.png" alt="logo">
+                        <a class="normal-case text-[#FFF] text-xl lg:text-4xl text-bold">Fruit Burst</a>
+                    </div>
+                </div>
+                <div class="mobile relative ">
+                    <input class="input input-bordered join-item rounded-[50px]" placeholder="Search here" />
+                    <img class="absolute bottom-[10px] right-[12px]" src="images/Frame.png" alt="icon">
 
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
+    <main class="md:container md:mx-auto">
 
     </main>
     <footer>
-        
+
     </footer>
 
 </body>
